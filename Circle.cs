@@ -2,8 +2,8 @@
 {
     internal class Circle
     {
-        double _Radius;
-
+        public double _Radius;
+        float _pi = 3.14f;
 
         public Circle(double radius)
         {
@@ -16,9 +16,10 @@
             return _Radius;
         }
 
-        public double GetArea(double radius)
+        public double GetArea()
         {
-            return radius * radius * Math.PI;
+            double area = _Radius * _Radius * _pi;
+            return area;
         }
     }
 }
